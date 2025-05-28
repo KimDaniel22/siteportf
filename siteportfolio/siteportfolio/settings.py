@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'siteportfolio.urls'
+ROOT_URLCONF = 'siteportfolio.siteportfolio.urls'
 
 TEMPLATES = [
     {
