@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: your-project-name
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn siteportfolio.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: siteportfolio.settings
+      - key: PYTHON_VERSION
+        value: 3.10
